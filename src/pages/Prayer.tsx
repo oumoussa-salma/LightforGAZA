@@ -425,7 +425,7 @@ function Prayer() {
           <p className="mt-6 text-sm text-gray-500 italic">
             Made with <span className="text-rose-500 font-semibold">Niyya</span> and{' '}
             <span className="text-green-600 font-semibold">Ajjr</span> of everyone who prays — so{' '}
-            <span className="font-semibold text-gray-600">pray</span>, use it, and share it 💚
+            <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
           </p>
           <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
             By Oumoussa & Attioui

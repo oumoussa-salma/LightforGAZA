@@ -180,7 +180,7 @@ const History = () => {
             )}
             <h3 className="text-xl font-semibold text-gray-800">{currentEvent.title}</h3>
           </div>
-          <p className="text-l text-gray-500 mb-1">{currentEvent.date}</p>
+          <p className="text-lg text-gray-500 mb-1 font-semibold">{currentEvent.date}</p>
           <p className="text-gray-700 leading-relaxed mb-4">{currentEvent.description}</p>
           <p className="text-gray-800 italic text-right">{currentEvent.description_ar}</p>
         </motion.div>
@@ -228,7 +228,7 @@ const History = () => {
         </p>
         <p className="mt-6 text-sm text-gray-500 italic">
           Made with <span className="text-rose-500 font-semibold">Niyya</span> and <span className="text-green-600 font-semibold">Ajjr</span> 
-          of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 💚
+          of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
         </p>
         <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
           By Oumoussa & Attioui
