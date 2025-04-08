@@ -29,8 +29,7 @@ const Navbar = () => {
             <NavLink to="/prayer" icon={<Feather className="w-4 h-4" />} text="Prayer" isActive={isActive('/prayer')} />
             <NavLink to="/history" icon={<History className="w-4 h-4" />} text="History" isActive={isActive('/history')} />
             <NavLink to="/action" icon={<Globe2 className="w-4 h-4" />} text="Take Action" isActive={isActive('/action')} />
-            <NavLink to="/wall-of-light" icon={<Candle className="w-4 h-4" />} text="Wall of Light" isActive={isActive('/wall-of-light')} />
-          </div>
+            </div>
         </div>
       </div>
     </motion.nav>

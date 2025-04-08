@@ -6,7 +6,6 @@ import Welcome from './pages/';
 import Prayer from './pages/Prayer';
 import History from './pages/History';
 import Action from './pages/Action';
-import WallOfLight from './pages/WallOfLight';
 
 function App() {
   return (
@@ -18,8 +17,7 @@ function App() {
             <Route path="/" element={<Welcome />} />
             <Route path="/prayer" element={<Prayer />} />
             <Route path="/history" element={<History />} />
-            <Route path="/action" element={<Action />} />
-            <Route path="/wall-of-light" element={<WallOfLight />} />
+            <Route path="/action" element={<Action />} /> 
           </Routes>
         </main>
       </div>
