@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Heart, Feather, History as HistoryIcon, Candy as Candle, Globe2 } from 'lucide-react';
 import Navbar from './components/Navbar';
-import Welcome from './pages/Welcome';
+import Welcome from './pages/';
 import Prayer from './pages/Prayer';
 import History from './pages/History';
 import Action from './pages/Action';
