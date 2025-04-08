@@ -180,7 +180,7 @@ const History = () => {
             )}
             <h3 className="text-xl font-semibold text-gray-800">{currentEvent.title}</h3>
           </div>
-          <p className="text-sm text-gray-500 mb-1">{currentEvent.date}</p>
+          <p className="text-l text-gray-500 mb-1">{currentEvent.date}</p>
           <p className="text-gray-700 leading-relaxed mb-4">{currentEvent.description}</p>
           <p className="text-gray-800 italic text-right">{currentEvent.description_ar}</p>
         </motion.div>

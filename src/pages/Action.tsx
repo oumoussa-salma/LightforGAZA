@@ -97,40 +97,84 @@ const Action = () => {
 
               <AnimatePresence>
                 {showBoycott && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 20 }}
-                    className="mt-6 bg-white/90 rounded-2xl shadow-md px-8 py-6 border border-green-100 text-left"
-                  >
-                    <h4 className="text-xl font-semibold text-green-700 mb-4">🚫 What to Boycott</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      {[{
-                        title: 'Moroccan Boycott Guide 🇲🇦',
-                        description: 'A curated list of companies and products to avoid in support of Palestine from a Moroccan context.',
-                        file: '/assets/mar_boycott.pdf',
-                        status: 'Updated April 2024',
-                      }, {
-                        title: 'Global Boycott Guide 🌍',
-                        description: 'International brands and corporations complicit in occupation and oppression — a global call to ethical action.',
-                        file: '/assets/global_boycott.pdf',
-                        status: 'Includes BDS recommendations',
-                      }].map((item, i) => (
-                        <div key={i} className="bg-gray-50 p-4 rounded-lg shadow-sm hover:bg-gray-100 transition">
-                          <h5 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h5>
-                          <p className="text-sm text-gray-600 mb-2">{item.description}</p>
-                          <a href={item.file} target="_blank" className="text-red-600 underline text-sm">📥 Download PDF</a>
-                          <div className="text-xs text-gray-500 mt-1">{item.status}</div>
-                        </div>
-                      ))}
-                    </div>
-                    <button
-                      onClick={() => setShowBoycott(false)}
-                      className="mt-6 text-xs text-green-700 underline hover:text-green-900"
+                <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                className="mt-6 bg-white/90 rounded-2xl shadow-md px-8 py-6 border border-green-100 text-left"
+              >
+                <h4 className="text-xl font-semibold text-green-700 mb-4">🚫 What to Boycott</h4>
+              
+                <p className="text-sm text-gray-700 mb-6">
+                  Stay informed and make ethical choices with these curated tools and apps that help you verify if a product or company supports injustice. Whether you're shopping locally or globally, these resources empower your purchasing power. 💪
+                </p>
+              
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+                  {[
+                    {
+                      title: 'Belzamesh (بلزماش)',
+                      description: 'Scan products and discover if they’re part of the boycott list. Built for everyday Moroccan consumers.',
+                      link: 'https://play.google.com/store/search?q=belzamesh+%D8%A8%D9%84%D8%B2%D9%85%D8%B4&c=apps',
+                      icon: '/assets/icons/belzamesh.webp'
+                    },
+                    {
+                      title: 'Boycat',
+                      description: 'Global database of companies involved in occupation. Scan or search to instantly verify products.',
+                      link: 'https://play.google.com/store/apps/details?id=com.boycat.app&pli=1',
+                      icon: '/assets/icons/boycat.webp'
+                    },
+                    {
+                      title: 'No Thanks',
+                      description: 'Elegant, easy-to-use boycott app with real-time updates and brand alternatives.',
+                      link: 'https://play.google.com/store/apps/details?id=com.bashsoftware.boycott',
+                      icon: '/assets/icons/nothanks.webp'
+                    }
+                  ].map((app, i) => (
+                    <a
+                      key={i}
+                      href={app.link}
+                      target="_blank"
+                      className="bg-gray-50 hover:bg-gray-100 transition rounded-lg p-4 shadow-sm flex items-start space-x-4"
                     >
-                      Close ✖
-                    </button>
-                  </motion.div>
+                      <img src={app.icon} alt={`${app.title} logo`} className="w-12 h-12 rounded" />
+                      <div>
+                        <h5 className="text-md font-semibold text-gray-800">{app.title}</h5>
+                        <p className="text-sm text-gray-600">{app.description}</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              
+                <h5 className="text-md font-semibold text-green-700 mb-4">📄 PDF Guides</h5>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  {[{
+                    title: 'Moroccan Boycott Guide 🇲🇦',
+                    description: 'A curated list of companies and products to avoid in support of Palestine from a Moroccan context.',
+                    file: '/assets/mar_boycott.pdf',
+                    status: 'Updated April 2024',
+                  }, {
+                    title: 'Global Boycott Guide 🌍',
+                    description: 'International brands and corporations complicit in occupation and oppression — a global call to ethical action.',
+                    file: '/assets/global_boycott.pdf',
+                    status: 'Includes BDS recommendations',
+                  }].map((item, i) => (
+                    <div key={i} className="bg-gray-50 p-4 rounded-lg shadow-sm hover:bg-gray-100 transition">
+                      <h5 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h5>
+                      <p className="text-sm text-gray-600 mb-2">{item.description}</p>
+                      <a href={item.file} target="_blank" className="text-red-600 underline text-sm">📥 Download PDF</a>
+                      <div className="text-xs text-gray-500 mt-1">{item.status}</div>
+                    </div>
+                  ))}
+                </div>
+              
+                <button
+                  onClick={() => setShowBoycott(false)}
+                  className="mt-6 text-xs text-green-700 underline hover:text-green-900"
+                >
+                  Close ✖
+                </button>
+              </motion.div>
+              
                 )}
               </AnimatePresence>
             </div>

@@ -19,9 +19,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-3">
             <img src="/assets/watermelon.png" alt="Light for Gaza" className="h-10 w-10" />
-            <Link to="/" className="text-2xl font-serif text-gray-800 hover:text-gray-600 transition-colors">
-              Light for Gaza
-            </Link>
+            <Link to="/" className='text-3xl font-light italic tracking-wide text-[#3b3a30] hover:text-[#55534d] transition-colors font-["Amiri",serif]'>
+  Light for Gaza
+</Link>
+
           </div>
 
           {/* Desktop nav */}
