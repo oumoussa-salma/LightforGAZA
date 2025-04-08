@@ -355,9 +355,23 @@ function Prayer() {
 
         </motion.div>
         <section className="mt-16 text-center relative z-10">
-  <img src="/assets/watermelon.png" alt="Watermelon for Palestine" className="w-16 h-16 mx-auto mb-4" />
-  <p className="text-sm text-gray-500 italic">
+  <img
+    src="/assets/watermelon.png"
+    alt="Watermelon for Palestine"
+    className="w-16 h-16 mx-auto mb-4"
+  />
+  
+  <p className="text-base text-gray-700 font-medium italic max-w-md mx-auto">
     The watermelon has become a peaceful symbol of Palestinian resistance.
+  </p>
+
+  <p className="mt-6 text-sm text-gray-500 italic">
+    Made with <span className="text-rose-500 font-semibold">Niyya</span> and <span className="text-green-600 font-semibold">Ajjr </span> 
+     of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 💚
+  </p>
+
+  <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
+    By Oumoussa & Attioui
   </p>
 </section>
       </div>
