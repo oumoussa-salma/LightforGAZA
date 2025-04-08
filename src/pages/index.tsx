@@ -53,7 +53,6 @@ const Welcome = () => {
           transition={{ delay: 0.6 }}
           className="flex items-center justify-center space-x-4 my-12"
         >
-          <Heart className="w-7 h-7 text-rose-500 animate-pulse" />
           <span className="text-gray-500">•</span>
           <span className="font-arabic text-2xl">السلام</span>
           <span className="text-gray-500">•</span>
