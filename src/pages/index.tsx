@@ -12,7 +12,7 @@ const Welcome = () => {
     >
 
 <div
-  className="absolute inset-0 z-0 pointer-events-none opacity-10 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
+  className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
 ></div>
 
 
@@ -32,9 +32,27 @@ const Welcome = () => {
         transition={{ delay: 0.4 }}
         className="text-2xl text-gray-600 mb-8 font-body italic relative z-10"
       >
-        "If we cannot help with our hands, let us help with our hearts"
+        "When our hands fall short, let our hearts reach out"
       </motion.p>
 
+
+      <motion.div
+  initial={{ y: 30, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ delay: 0.55 }}
+  className="mt-16 relative z-10"
+>
+  <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center">
+    <span className="text-black">We are not</span>{' '}
+    <span className="text-white bg-black px-2 rounded">powerless</span>{' '}
+    <span className="text-red-600">;</span>{' '}
+    <span className="text-green-700">even in stillness,</span>{' '}
+    <span className="text-rose-700">our hearts</span>{' '}
+    <span className="text-black">can make a</span>{' '}
+    <span className="text-red-700">difference</span>
+    <span className="text-green-700">.</span>
+  </h2>
+</motion.div>
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -58,8 +76,12 @@ const Welcome = () => {
           <span className="font-serif text-lg">Peace</span>
           <span className="text-gray-500">•</span>
           <span className="font-serif text-lg">Paix</span>
+
+          
         </motion.div>
-      </motion.div>
+
+
+          </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-5xl mx-auto relative z-10">
         <FeatureCard
