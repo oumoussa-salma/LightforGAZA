@@ -9,7 +9,9 @@ const Action = () => {
 
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-rose-50 to-green-50 px-6 md:px-12 py-16 text-center overflow-hidden">
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-10 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center" />
+      <div
+  className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
+></div>
 
       <div className="relative z-10 max-w-6xl mx-auto space-y-20">
         <section className="text-center mb-12">
@@ -266,10 +268,9 @@ const Action = () => {
     Made with <span className="text-rose-500 font-semibold">Niyya</span> and <span className="text-green-600 font-semibold">Ajjr </span> 
      of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
   </p>
-
-  <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
-    By Oumoussa & Attioui
-  </p>
+  <p className="mt-2 text-xs text-gray-400 font-mono tracking-wide">
+By Oumoussa & Attioui
+</p>
 </section>
           </div>
         </section>

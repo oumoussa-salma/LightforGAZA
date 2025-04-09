@@ -152,8 +152,9 @@ const History = () => {
       transition={{ duration: 1 }}
       className="relative min-h-screen bg-gradient-to-br from-rose-50 to-green-50 px-6 md:px-12 py-16 overflow-hidden"
     >
-      <div className="absolute inset-0 z-0 pointer-events-none opacity-10 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"></div>
-
+     <div
+  className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
+></div>
       <div className="text-center mb-12 relative z-10">
         <div className="flex justify-center mb-4">
           <HistoryIcon className="w-16 h-16 text-indigo-600" />
@@ -226,13 +227,15 @@ const History = () => {
         <p className="text-base text-gray-700 font-medium italic max-w-md mx-auto">
           The watermelon has become a peaceful symbol of Palestinian resistance.
         </p>
-        <p className="mt-6 text-sm text-gray-500 italic">
+        
+
+        <p className="mt-6 text-sm text-gray-600 italic leading-relaxed">
           Made with <span className="text-rose-500 font-semibold">Niyya</span> and <span className="text-green-600 font-semibold">Ajjr</span> 
           of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
         </p>
-        <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
-          By Oumoussa & Attioui
-        </p>
+        <p className="mt-2 text-xs text-gray-400 font-mono tracking-wide">
+By Oumoussa & Attioui
+</p>
       </section>
     </motion.div>
   );

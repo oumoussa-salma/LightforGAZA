@@ -46,8 +46,8 @@ const Welcome = () => {
     <span className="text-black">We are not</span>{' '}
     <span className="text-white bg-black px-2 rounded">powerless</span>{' '}
     <span className="text-red-600">;</span>{' '}
-    <span className="text-green-700">even in stillness,</span>{' '}
-    <span className="text-rose-700">our hearts</span>{' '}
+    <span className="text-green-700">Even in stillness,</span>{' '}
+    <span className="text-rose-700">Our hearts</span>{' '}
     <span className="text-black">can make a</span>{' '}
     <span className="text-red-700">difference</span>
     <span className="text-green-700">.</span>
@@ -118,9 +118,9 @@ const Welcome = () => {
      of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
   </p>
 
-  <p className="mt-1 text-xs text-gray-400 font-mono tracking-wide">
-    By Oumoussa & Attioui
-  </p>
+  <p className="mt-2 text-xs text-gray-400 font-mono tracking-wide">
+By Oumoussa & Attioui
+</p>
 </section>
 
       
