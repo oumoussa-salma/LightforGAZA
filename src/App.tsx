@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Heart, Feather, History as HistoryIcon, Candy as Candle, Globe2 } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Welcome from './pages/';
 import Prayer from './pages/Prayer';
@@ -17,7 +16,7 @@ function App() {
             <Route path="/" element={<Welcome />} />
             <Route path="/prayer" element={<Prayer />} />
             <Route path="/history" element={<History />} />
-            <Route path="/action" element={<Action />} /> 
+            <Route path="/action" element={<Action />} />
           </Routes>
         </main>
       </div>
