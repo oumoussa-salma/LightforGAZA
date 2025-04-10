@@ -1,23 +1,20 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Welcome = () => {
   return (
-    <motion.div 
+    <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       className="relative min-h-screen bg-gradient-to-br from-rose-50 to-green-50 px-6 md:px-12 py-16 text-center overflow-hidden"
     >
-
-<div
-  className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
-></div>
-
+      <div
+        className="absolute inset-0 z-0 pointer-events-none opacity-20 bg-[url('/assets/kufiapattern.svg')] bg-cover bg-center"
+      ></div>
 
       {/* Main content on top of pattern */}
-      <motion.h1 
+      <motion.h1
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3 }}
@@ -26,46 +23,46 @@ const Welcome = () => {
         Light for Gaza
       </motion.h1>
 
-      <motion.p 
+      <motion.p
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.4 }}
         className="text-2xl text-gray-600 mb-8 font-body italic relative z-10"
       >
-        "When our hands fall short, let our hearts reach out"
+        "When our hands fall short, let our hearts reach out"
       </motion.p>
 
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.55 }}
+        className="mt-16 relative z-10"
+      >
+        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center">
+          <span className="text-black">We are not</span>{' '}
+          <span className="text-white bg-black px-2 rounded">powerless</span>{' '}
+          <span className="text-red-600">;</span>{' '}
+          <span className="text-green-700">Even in stillness,</span>{' '}
+          <span className="text-rose-700">Our hearts</span>{' '}
+          <span className="text-black">can make a</span>{' '}
+          <span className="text-red-700">difference</span>
+          <span className="text-green-700">.</span>
+        </h2>
+      </motion.div>
 
       <motion.div
-  initial={{ y: 30, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ delay: 0.55 }}
-  className="mt-16 relative z-10"
->
-  <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center">
-    <span className="text-black">We are not</span>{' '}
-    <span className="text-white bg-black px-2 rounded">powerless</span>{' '}
-    <span className="text-red-600">;</span>{' '}
-    <span className="text-green-700">Even in stillness,</span>{' '}
-    <span className="text-rose-700">Our hearts</span>{' '}
-    <span className="text-black">can make a</span>{' '}
-    <span className="text-red-700">difference</span>
-    <span className="text-green-700">.</span>
-  </h2>
-</motion.div>
-      <motion.div 
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
         className="prose prose-lg max-w-3xl mx-auto text-gray-700 relative z-10"
       >
         <p className="mb-6 font-body text-xl">
-          Welcome to a sacred space dedicated to prayer, remembrance, and peaceful solidarity 
-          with the people of Gaza. Here, we gather in spirit to offer our support through 
+          Welcome to a sacred space dedicated to prayer, remembrance, and peaceful solidarity
+          with the people of Gaza. Here, we gather in spirit to offer our support through
           reflection, prayer, and mindful action.
         </p>
 
-        <motion.div 
+        <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6 }}
@@ -76,12 +73,8 @@ const Welcome = () => {
           <span className="font-serif text-lg">Peace</span>
           <span className="text-gray-500">•</span>
           <span className="font-serif text-lg">Paix</span>
-
-          
         </motion.div>
-
-
-          </motion.div>
+      </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-5xl mx-auto relative z-10">
         <FeatureCard
@@ -100,38 +93,41 @@ const Welcome = () => {
           delay={0.9}
         />
       </div>
-    
 
       <section className="mt-16 text-center relative z-10">
-  <img
-    src="/assets/watermelon.png"
-    alt="Watermelon for Palestine"
-    className="w-16 h-16 mx-auto mb-4"
-  />
-  
-  <p className="text-base text-gray-700 font-medium italic max-w-md mx-auto">
-    The watermelon has become a peaceful symbol of Palestinian resistance.
-  </p>
+        <img
+          src="/assets/watermelon.png"
+          alt="Watermelon for Palestine"
+          className="w-16 h-16 mx-auto mb-4"
+        />
 
-  <p className="mt-6 text-sm text-gray-500 italic">
-    Made with <span className="text-rose-500 font-semibold">Niyya</span> and <span className="text-green-600 font-semibold">Ajjr </span> 
-     of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it 
-  </p>
+        <p className="text-base text-gray-700 font-medium italic max-w-md mx-auto">
+          The watermelon has become a peaceful symbol of Palestinian resistance.
+        </p>
 
-  <p className="mt-2 text-xs text-gray-400 font-mono tracking-wide">
-By Oumoussa & Attioui
-</p>
-</section>
+        <p className="mt-6 text-sm text-gray-500 italic">
+          Made with <span className="text-rose-500 font-semibold">Niyya</span> and{' '}
+          <span className="text-green-600 font-semibold">Ajjr </span>
+          of everyone who prays — so <span className="font-semibold text-gray-600">pray</span>, use it, and share it
+        </p>
 
-      
+        <p className="mt-2 text-xs text-gray-400 font-mono tracking-wide">
+          By Oumoussa & Attioui
+        </p>
+      </section>
     </motion.div>
-
-    
-    
   );
 };
 
-const FeatureCard = ({ title, description, delay }: { title: string; description: string; delay: number }) => (
+const FeatureCard = ({
+  title,
+  description,
+  delay
+}: {
+  title: string;
+  description: string;
+  delay: number;
+}) => (
   <motion.div
     initial={{ y: 20, opacity: 0 }}
     animate={{ y: 0, opacity: 1 }}
