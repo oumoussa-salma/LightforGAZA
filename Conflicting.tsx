@@ -1,6 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Conflicting: React.FC = () => {
+
     return (
         <div>
             <h1>Welcome to Light for GAZA</h1>
@@ -8,6 +9,7 @@ const Conflicting: React.FC = () => {
             <p>By Souhail</p>
         </div>
     );
+
 };
 
 export default Conflicting;
