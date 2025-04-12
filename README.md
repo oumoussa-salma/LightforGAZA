@@ -59,15 +59,19 @@ npm run dev
    ```bash
    git checkout -b feature/YourFeature
    ```
-3. Commit your changes:  
+3. Add changed files:
+   ```bash
+   git add .
+   ```
+4. Commit your changes:  
    ```bash
    git commit -m "Add meaningful feature"
    ```
-4. Push to your branch:  
+5. Push to your branch:  
    ```bash
    git push origin feature/YourFeature
    ```
-5. Open a Pull Request
+6. Open a Pull Request
 
 📄 Please refer to the `CONTRIBUTING.md` file for full contribution guidelines.
 
